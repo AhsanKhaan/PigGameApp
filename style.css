@@ -1,0 +1,210 @@
+body{
+    background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url(back.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Lato;
+    background-repeat:no-repeat; 
+    font-weight: 300;
+    position: relative;
+    height: 100vh;
+    color: #555; 
+}
+#container{
+    background-color:white;
+    height:600px;
+    width:1000px;
+    margin-left:160px;
+    margin-top: 20px; 
+    position: absolute;
+    box-shadow: -2px -2px 30px  black;
+
+}
+/*//////////////////////////
+Player 1 Styling
+*/
+.player0-panel{
+    float:left;
+    height:600px;
+    width:50%;
+    background-color:white;
+}
+
+
+.player-name{
+    text-transform: uppercase;
+    font-size:40px;
+    font-weight:50px;
+    color:grey;
+    letter-spacing:2px;
+    text-align: center;
+    margin-top:100px;
+    margin-bottom: 30px;
+}
+.player0-score{
+    text-transform: uppercase;
+    color:#EB4D4D;
+    font-size:80px;
+    
+    letter-spacing:2px;
+    text-align: center;
+    margin-top:20px;
+    margin-bottom:140px;   
+}
+.current-box0{
+    padding: 10px;
+    text-transform: uppercase;
+    margin:0px auto;
+    width:28%;
+    height:100px;
+    background-color:#EB4D4D;
+    color:white;
+    text-align:center;
+    
+    
+}
+.current-box0-label{
+    text-transform: uppercase;
+    color:black;
+    margin-bottom:10px;
+}
+.current-box0-score{
+    font-size:35px;
+    color:white;
+}
+/*//////////////////////////
+Player 2 Styling
+*/
+.player1-panel{
+    float:right;
+    height:600px;
+    width:50%;
+
+}
+.player1-panel{
+    float:left;
+    height:600px;
+    width:50%;
+    background-color:white;
+}
+
+.player-name{
+    text-transform: uppercase;
+    font-size:40px;
+    font-weight:50px;
+    
+    letter-spacing:2px;
+    text-align: center;
+    margin-top:100px;
+    margin-bottom: 30px;
+}
+.player1-score{
+    text-transform: uppercase;
+    color:#EB4D4D;
+    font-size:80px;
+    
+    letter-spacing:2px;
+    text-align: center;
+    margin-top:20px;
+    margin-bottom:140px;   
+}
+.current-box1{
+    padding: 10px;
+    text-transform: uppercase;
+    margin:0px auto;
+    width:28%;
+    height:100px;
+    background-color:#EB4D4D;
+    color:white;
+    text-align:center;
+    
+    
+}
+.current-box1-label{
+    text-transform: uppercase;
+    color:black;
+    margin-bottom:10px;
+}
+.current-box1-score{
+    font-size:35px;
+    color:white;
+}
+
+/*
+//Player general config
+*/
+.active .player-name::after{
+    content:"\2022";
+    color:#EB4D4D;
+    position: absolute;
+    font-size: 40px;
+
+}
+.active::after{
+    font-weight: 600;
+}
+.active{
+    background-color: #f7f7f7f7;
+}
+button{
+    position:absolute;
+    left:50%;
+    border:none;
+    
+    width:150px;
+    font-weight: 300;
+    cursor: pointer;
+    font-family:lato;
+    font-size:20px;
+    transform: translateX(-50%);
+    color:#555;
+    background: none;
+    text-transform: uppercase;
+    transition:font-weight 0.3s;
+}
+.btn-new{
+    width:170px;
+    
+    top:40px;
+}
+.btn-roll{
+    width:170px;
+   top:403px; 
+}
+.btn-hold{
+top:467px;
+}
+i{  
+    color:#EB4D4D;
+    display:inline-block;
+    
+    margin:-4px;
+    margin-right:15px;
+    font-size:32px;
+    line-height: 1;
+    vertical-align: text-top;
+    transition:margin 0.3s;
+}
+button:hover{
+    font-weight: 600;
+
+}
+button:hover i{
+margin-right: 25px;
+}
+button:focus{
+    outline:none;
+}
+.dice{
+    position:absolute;
+    top:178px;
+    left:50%;
+    transform: translateX(-50%);
+    height:100px;
+    box-shadow: 0px 10px 60px rgb(182, 179, 179);
+}
+.winner{
+    background-color: #f7f7f7;
+}
+.winner .player-name{
+    font-weight: 300;color:#EB4d4d;
+}
